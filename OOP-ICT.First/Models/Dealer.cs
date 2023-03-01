@@ -1,16 +1,19 @@
 ﻿using OOP_ICT.Interfaces;
 
-namespace OOP_ICT;
+namespace OOP_ICT.Models;
 
 public class Dealer : IDealer
 {
+    private UserDeck _currentDeck;
+    
     public void InitializeCardDeck()
     {
-        throw new NotImplementedException();
+        _currentDeck = new UserDeck();
     }
 
     public UserDeck CreateShuffledUserDeck()
     {
-        throw new NotImplementedException();
+        _currentDeck.shuffle();
+        return _currentDeck;
     }
 }

@@ -1,6 +1,6 @@
-﻿namespace OOP_ICT;
+﻿namespace OOP_ICT.Models;
 
-public class UserDeck
+public class UserDeck : CardDeck
 {
     
 }
